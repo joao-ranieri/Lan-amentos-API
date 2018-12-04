@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    
+    <changeSet id="1" author="joaopaulo">
+    	<createTable tableName="usuarios">
+    	
+    		<column name="id" type="integer" autoIncrement="true">
+    			<constraints primaryKey="true" nullable="false"/>
+    		</column>
+    		
+    		<column name="usuario" type="varchar(50)">
+    			<constraints nullable="false" uniqueConstraintName="UNQ_USUARIO" unique="true"/>
+    		</column>
+    		
+    		<column name="senha" type="varchar(1500)">
+    			<constraints nullable="false"/>
+    		</column>
+    		
+    		<column name="perfil" type="varchar(15)">
+    			<constraints nullable="false"/>
+    		</column>
+    		
+    	</createTable>
+    </changeSet>
+    
+</databaseChangeLog>
