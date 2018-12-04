@@ -9,5 +9,5 @@ Api para lançamento de despesas.
 * Utilização do Liquibase.
 
 
-# usuário para login: admin
-# senha: 123546
+* usuário para login: admin
+* senha: 123546
